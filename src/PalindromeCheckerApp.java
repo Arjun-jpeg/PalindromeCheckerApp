@@ -9,12 +9,14 @@ public class PalindromeCheckerApp {
         Scanner input=new Scanner(System.in);
         System.out.println("Enter a string: ");
         String sample=input.nextLine();
-        String rev="";
+        boolean ispalin=true;
 
-        for (int i=sample.length()-1;i>=0;i--){
-            rev+=sample.charAt(i);
+        for (int i=0;i<sample.length();i++){
+            if(sample.charAt(i)!=sample.charAt(sample.length()-1-i)){
+                ispalin=false;
+            }
         }
-        return sample.equals(rev);
+        return ispalin;
     }
     public static void main(String []args){
         PalindromeCheckerApp ob=new PalindromeCheckerApp();
