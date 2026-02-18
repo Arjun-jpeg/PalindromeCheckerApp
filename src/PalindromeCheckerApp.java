@@ -11,8 +11,6 @@ public class PalindromeCheckerApp {
         PalindromeCheckerApp ob=new PalindromeCheckerApp();
         ob.show();
 
-        System.out.println("Version 1.0");
-        System.out.println("System succesfully initialised");
 
     }
 }
